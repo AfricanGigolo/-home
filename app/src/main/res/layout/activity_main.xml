@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chenjunfan.myluncher.MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        >
+        
+        
+        <Button
+            android:text="拨打电话"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:background="@drawable/biankuangred"
+            />
+        <Button
+            android:text="所有电话"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:background="@drawable/biankuangred"
+
+            />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:background="@drawable/biankuanggreen"
+            android:textColor="#ff2121"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="陈波"
+            android:textSize="50dp"
+            android:id="@+id/btn_chenbo"
+            />
+        <Button
+            android:background="@drawable/biankuanggreen"
+
+            android:textColor="#ff2121"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="岳群"
+            android:id="@+id/btn_yuequn"
+            android:textSize="50dp"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/biankuanggreen"
+            android:id="@+id/btn_zhangmeifen"
+            android:textColor="#ff2121"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="张美芳"
+            android:textSize="50dp"
+            />
+        <Button
+            android:background="@drawable/biankuanggreen"
+            android:id="@+id/btn_chenjunfan"
+            android:textColor="#ff2121"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="陈俊帆"
+
+            android:textSize="50dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/biankuanggreen"
+            android:id="@+id/btn_yuemin"
+            android:textColor="#ff2121"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="岳悯"
+            android:textSize="50dp"
+            />
+        <Button
+            android:background="@drawable/biankuanggreen"
+            android:id="@+id/btn_xiaoyin"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="小尹"
+
+            android:textSize="50dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="陈波"
+            android:textSize="50dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="陈波"
+
+            android:textSize="50dp"
+
+            />
+
+
+    </LinearLayout>
+    
+</LinearLayout>
