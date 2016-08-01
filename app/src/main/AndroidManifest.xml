@@ -37,6 +37,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".BohaoActivity"/>
+        <activity android:name=".txlActivity"/>
+
+
+
+
+
 
 
     </application>

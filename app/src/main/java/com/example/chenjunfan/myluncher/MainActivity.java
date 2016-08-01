@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button chenboBT, yuequnBT, chenjunfanBT, zhangmeifenBT, yueminBT, xiaoyinBT;
+    Button chenboBT, yuequnBT, chenjunfanBT, zhangmeifenBT, yueminBT, xiaoyinBT,bohaoBT,allnumBT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         zhangmeifenBT = (Button) findViewById(R.id.btn_zhangmeifen);
         yueminBT = (Button) findViewById(R.id.btn_yuemin);
         xiaoyinBT = (Button) findViewById(R.id.btn_xiaoyin);
+        bohaoBT = (Button) findViewById(R.id.btn_bohao);
+        allnumBT= (Button) findViewById(R.id.btn_allnum);
 
         chenboBT.setOnClickListener(MainActivity.this);
         yuequnBT.setOnClickListener(MainActivity.this);
@@ -87,6 +90,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     };
+
+    public  void bohao(View view)
+    {
+
+       Intent intent = new Intent(MainActivity.this,BohaoActivity.class);
+        startActivity(intent);
+
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (KeyEvent.KEYCODE_BACK == keyCode) {	return false;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    public void allnumber(View view)
+    {
+        Intent intent = new Intent(MainActivity.this,txlActivity.class);
+
+        startActivity(intent);
+    }
 
 
 }

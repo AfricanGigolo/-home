@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="陈俊帆"
+        android:id="@+id/tv_name"
+        android:textSize="40dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_num"
+        android:textSize="39dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="18512527741"
+        />
+
+
+
+</RelativeLayout>

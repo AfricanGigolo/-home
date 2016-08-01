@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_bohao"
+        android:textSize="50sp"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_bohao"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:gravity="center"
+
+                android:onClick="shuru"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_1"
+                android:text="1"
+                android:textSize="90sp"
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_2"
+                android:textSize="90sp"
+                android:text="2"
+
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_3"
+                android:textSize="90sp"
+                android:text="3"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_4"
+                android:text="4"
+                android:textSize="90sp"
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_5"
+                android:textSize="90sp"
+                android:text="5"
+
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_6"
+                android:textSize="90sp"
+                android:text="6"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_7"
+                android:text="7"
+                android:textSize="90sp"
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_8"
+                android:textSize="90sp"
+                android:text="8"
+
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_9"
+                android:textSize="90sp"
+                android:text="9"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_shan"
+                android:text="删除"
+                android:textSize="40sp"
+                />
+            <Button
+                android:onClick="shuru"
+                android:gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_0"
+                android:textSize="90sp"
+                android:text="0"
+
+                />
+            <Button
+                android:onClick="shuru"
+                
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_boda"
+                android:textSize="40sp"
+                android:text="拨打"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

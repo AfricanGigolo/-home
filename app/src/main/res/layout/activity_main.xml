@@ -22,12 +22,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" 
             android:layout_weight="1"
+            android:id="@+id/btn_bohao"
             android:background="@drawable/biankuangred"
+            android:onClick="bohao"
             />
         <Button
             android:text="所有电话"
             android:textColor="@android:color/holo_green_dark"
             android:textSize="20sp"
+            android:onClick="allnumber"
+            android:id="@+id/btn_allnum"
             android:layout_width="match_parent"
             android:layout_height="match_parent" 
             android:layout_weight="1"
