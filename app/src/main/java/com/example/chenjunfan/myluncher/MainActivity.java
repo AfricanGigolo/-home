@@ -9,15 +9,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button chenboBT, yuequnBT, chenjunfanBT, zhangmeifenBT, yueminBT, xiaoyinBT,bohaoBT,allnumBT;
+    TextView timeTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initview();
+        refreshTime();
     }
 
     public void initview() {
@@ -29,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         xiaoyinBT = (Button) findViewById(R.id.btn_xiaoyin);
         bohaoBT = (Button) findViewById(R.id.btn_bohao);
         allnumBT= (Button) findViewById(R.id.btn_allnum);
+        timeTV = (TextView) findViewById(R.id.TV_time);
 
         chenboBT.setOnClickListener(MainActivity.this);
         yuequnBT.setOnClickListener(MainActivity.this);
@@ -36,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         zhangmeifenBT.setOnClickListener(MainActivity.this);
         yueminBT.setOnClickListener(MainActivity.this);
         xiaoyinBT.setOnClickListener(MainActivity.this);
+
 
     }
 
@@ -98,6 +107,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
 
     }
+    public void presstime(View view)
+    {
+        Intent intent=new Intent();
+        intent.setAction(Intent.ACTION_CALL_BUTTON);
+        startActivity(intent);
+    }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (KeyEvent.KEYCODE_BACK == keyCode) {	return false;
@@ -110,6 +125,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(MainActivity.this,txlActivity.class);
 
         startActivity(intent);
+    }
+
+    Handler handlertime = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            SimpleDateFormat sd = new SimpleDateFormat("yyyy年MM月dd日\n EEEE HH点mm分ss秒 ");
+            timeTV.setText(sd.format(new Date()));
+
+
+        }
+
+
+    };
+
+    public void refreshTime()
+    {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+
+                    try {
+                        Thread.sleep(100);
+                        handlertime.sendMessage(new Message());
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            }
+        }).start();
+
     }
 
 

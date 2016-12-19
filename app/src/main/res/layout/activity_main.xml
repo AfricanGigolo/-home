@@ -41,6 +41,16 @@
         
         
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxx年xx月xx日\n xx点xx分"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/TV_time"
+        android:onClick="presstime"
+        />
+
 
     <LinearLayout
         android:layout_weight="1"
