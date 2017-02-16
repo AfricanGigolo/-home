@@ -41,6 +41,54 @@
         
         
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        >
+
+        <Button
+        android:text="下象棋"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:onClick="allnumber"
+        android:id="@+id/btn_xiangqi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/biankuangred"
+
+        />
+
+        <Button
+            android:text="照相"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_takephotos"
+            android:background="@drawable/biankuangred"
+            android:onClick="bohao"
+            />
+        <Button
+            android:text="看照片"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:onClick="allnumber"
+            android:id="@+id/btn_watchphotos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/biankuangred"
+
+            />
+
+
+
+
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

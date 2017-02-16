@@ -2,9 +2,16 @@ package com.example.chenjunfan.myluncher;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 /**
@@ -16,19 +23,23 @@ public class BohaoActivity extends Activity {
 
     private TextView bohaoTV;
 
+    String str = null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bohao);
 
         bohaoTV= (TextView) findViewById(R.id.tv_bohao);
+        str = (String) bohaoTV.getText();
 
 
     }
 
     public void shuru(View view)
     {
-        String str= (String) bohaoTV.getText();
+
         switch (view.getId())
         {
             case R.id.btn_0:
@@ -78,6 +89,8 @@ public class BohaoActivity extends Activity {
                 }
                 break;
             case R.id.btn_boda:
+
+
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + str));
                 try {
                     startActivity(intent);
@@ -85,6 +98,7 @@ public class BohaoActivity extends Activity {
                     e.printStackTrace();
                 }
                 break;
+
         }
     }
 
@@ -93,4 +107,10 @@ public class BohaoActivity extends Activity {
         super.onPause();
         finish();
     }
+
+
+
+
+
+
 }
