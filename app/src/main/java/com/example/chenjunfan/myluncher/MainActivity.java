@@ -106,13 +106,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 backgroundAlpha(0.5f);
                 break;
             case R.id.btn_zhangmeifen:
-                str="15334375440";
-                titleTV.setText("拨打 张美芬 的电话？");
+                str="15388872917";
+                titleTV.setText("拨打 岳贵兴 的电话？");
                 pop.showAtLocation(popview, Gravity.CENTER_HORIZONTAL,0,0);
                 backgroundAlpha(0.5f);
                 break;
             case R.id.btn_chenjunfan:
-                str="18512527741";
+                str="17626027741";
                 titleTV.setText("拨打 陈俊帆 的电话？");
                 pop.showAtLocation(popview, Gravity.CENTER_HORIZONTAL,0,0);
                 backgroundAlpha(0.5f);
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try
                 {
                     Intent intent_takephotos = new Intent();
-                    intent_takephotos.setClassName("com.android.gallery3d","com.android.camera.CameraLauncher");
+                    intent_takephotos.setClassName("com.android.camera","com.android.camera.Camera");
                     startActivity(intent_takephotos);
                 }
                 catch (Exception e)
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_watchphotos:
                 try{
                     Intent intent_watchphotos = new Intent();
-                    intent_watchphotos.setClassName("com.android.gallery3d","com.android.gallery3d.app.GalleryActivity");
+                    intent_watchphotos.setClassName("com.miui.gallery","com.miui.gallery.activity.HomePageActivity");
                     startActivity(intent_watchphotos);
                 }
                 catch (Exception e)

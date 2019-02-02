@@ -17,25 +17,25 @@
         
         <Button
             android:text="拨打电话"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" 
             android:layout_weight="1"
             android:id="@+id/btn_bohao"
-            android:background="@drawable/biankuangred"
+            android:background="@android:color/black"
             android:onClick="bohao"
             />
         <Button
             android:text="所有电话"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:onClick="allnumber"
             android:id="@+id/btn_allnum"
             android:layout_width="match_parent"
             android:layout_height="match_parent" 
             android:layout_weight="1"
-            android:background="@drawable/biankuangred"
+            android:background="@android:color/black"
 
             />
         
@@ -50,38 +50,38 @@
 
         <Button
         android:text="下象棋"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:onClick="allnumber"
         android:id="@+id/btn_xiangqi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/biankuangred"
+        android:background="@android:color/black"
 
         />
 
         <Button
             android:text="照相"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/btn_takephotos"
-            android:background="@drawable/biankuangred"
+            android:background="@android:color/black"
             android:onClick="bohao"
             />
         <Button
             android:text="看照片"
-            android:textColor="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:onClick="allnumber"
             android:id="@+id/btn_watchphotos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/biankuangred"
+            android:background="@android:color/black"
 
             />
 
@@ -109,8 +109,8 @@
 
 
         <Button
-            android:background="@drawable/biankuanggreen"
-            android:textColor="#ff2121"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -119,9 +119,9 @@
             android:id="@+id/btn_chenbo"
             />
         <Button
-            android:background="@drawable/biankuanggreen"
+            android:background="@android:color/black"
 
-            android:textColor="#ff2121"
+            android:textColor="@android:color/white"
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -142,20 +142,19 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/biankuanggreen"
             android:id="@+id/btn_zhangmeifen"
-            android:textColor="#ff2121"
-
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+
             android:layout_weight="1"
-            android:text="张美芳"
-            android:textSize="50dp"
-            />
+            android:background="@android:color/black"
+            android:text="岳贵兴"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
         <Button
-            android:background="@drawable/biankuanggreen"
+            android:background="@android:color/black"
             android:id="@+id/btn_chenjunfan"
-            android:textColor="#ff2121"
+            android:textColor="@android:color/white"
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -177,9 +176,9 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/biankuanggreen"
+            android:background="@android:color/black"
             android:id="@+id/btn_yuemin"
-            android:textColor="#ff2121"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -187,9 +186,9 @@
             android:textSize="50dp"
             />
         <Button
-            android:background="@drawable/biankuanggreen"
+            android:background="@android:color/black"
             android:id="@+id/btn_xiaoyin"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
